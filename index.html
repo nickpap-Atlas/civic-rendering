@@ -9,8 +9,6 @@
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Inter',sans-serif;color:#333;}
 a{text-decoration:none;color:inherit;}
-
-/* NAV */
 header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #eee;padding:0 5%;}
 .nav{display:flex;align-items:center;justify-content:space-between;height:80px;}
 .nav-logo img{height:65px;object-fit:contain;}
@@ -21,9 +19,7 @@ header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid
 .btn{background:#C4622D;color:#fff;padding:10px 22px;border-radius:6px;font-weight:600;font-size:14px;border:none;cursor:pointer;}
 .btn:hover{background:#a8511f;}
 @media(max-width:700px){.nav-links{display:none;}.nav-logo img{height:50px;}}
-
-/* HERO */
-.hero{position:relative;height:520px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:url('https://drive.google.com/uc?export=view&id=1z6RK8cN3aunxHXFyjuM52BEI_TvOyJFk') center/cover no-repeat;}
+.hero{position:relative;height:520px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:url('https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936082/civic/mittagong-1.jpg') center/cover no-repeat;}
 .hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.55);}
 .hero-content{position:relative;z-index:1;max-width:700px;padding:0 20px;}
 .hero h1{font-size:2.6rem;font-weight:700;margin-bottom:14px;line-height:1.2;}
@@ -32,45 +28,33 @@ header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid
 .btn-outline{border:2px solid #fff;color:#fff;padding:10px 22px;border-radius:6px;font-weight:600;font-size:14px;}
 .btn-outline:hover{background:#fff;color:#333;}
 @media(max-width:600px){.hero h1{font-size:1.8rem;}.hero{height:420px;}}
-
-/* SECTIONS */
 section{padding:60px 5%;}
 .section-title{text-align:center;margin-bottom:40px;}
 .section-title h2{font-size:1.9rem;font-weight:700;color:#1a1a2e;margin-bottom:10px;}
 .section-title .bar{width:50px;height:3px;background:#C4622D;margin:0 auto;}
-
-/* SERVICES */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;}
 .service-card{background:#f8f8f8;border-radius:10px;padding:32px 24px;text-align:center;}
 .service-icon{font-size:2.5rem;margin-bottom:16px;}
 .service-card h3{font-size:1.1rem;font-weight:700;margin-bottom:10px;color:#1a1a2e;}
 .service-card p{font-size:0.9rem;color:#666;line-height:1.6;}
-
-/* LOGOS */
 .logos-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:20px 30px;}
 .logo-item{display:flex;align-items:center;justify-content:center;width:160px;height:64px;background:#fff;border-radius:8px;padding:8px 12px;box-shadow:0 2px 8px rgba(0,0,0,0.08);}
 .logo-item.dark{background:#1a1a2e;}
-.logo-item img{max-width:130px;max-height:48px;object-fit:contain;width:auto;height:auto;filter:grayscale(80%);opacity:0.75;}
+.logo-item img{max-width:130px;max-height:48px;object-fit:contain;width:auto;height:auto;filter:grayscale(80%);opacity:0.75;transition:all 0.2s;}
 .logo-item:hover img{filter:none;opacity:1;}
-
-/* GALLERY */
 .gallery-group{margin-bottom:36px;}
 .gallery-group h3{font-size:1rem;font-weight:600;color:#C4622D;margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;}
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
 .gallery-grid img{width:100%;height:180px;object-fit:cover;border-radius:8px;}
-
-/* TESTIMONIAL */
 #testimonials{background:#f4f4f4;}
 .testimonial-card{max-width:680px;margin:0 auto;background:#fff;border-radius:12px;padding:36px 40px;box-shadow:0 4px 20px rgba(0,0,0,0.07);text-align:center;}
-.testimonial-card .quote{font-size:3rem;color:#C4622D;line-height:1;margin-bottom:12px;}
+.quote{font-size:3rem;color:#C4622D;line-height:1;margin-bottom:12px;}
 .testimonial-card p{font-size:1.05rem;font-style:italic;color:#444;line-height:1.8;margin-bottom:24px;}
 .testimonial-author{display:flex;align-items:center;justify-content:center;gap:14px;}
 .author-avatar{width:48px;height:48px;border-radius:50%;background:#C4622D;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;}
 .author-info{text-align:left;}
 .author-info strong{display:block;color:#1a1a2e;font-size:0.95rem;}
 .author-info span{color:#888;font-size:0.85rem;}
-
-/* CONTACT */
 #contact{background:#1a1a2e;color:#fff;}
 #contact .section-title h2{color:#fff;}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:900px;margin:0 auto;}
@@ -78,12 +62,9 @@ section{padding:60px 5%;}
 .contact-form input,.contact-form select,.contact-form textarea{width:100%;padding:12px 14px;border:1px solid #333;border-radius:6px;background:#262640;color:#fff;font-size:14px;margin-bottom:14px;font-family:'Inter',sans-serif;}
 .contact-form textarea{height:120px;resize:vertical;}
 .contact-form select option{background:#262640;}
-.contact-details{padding-top:8px;}
 .contact-details h3{font-size:1.1rem;font-weight:600;margin-bottom:20px;color:#C4622D;}
 .contact-item{display:flex;align-items:center;gap:12px;margin-bottom:18px;font-size:0.95rem;}
 .contact-item .icon{width:36px;height:36px;background:#C4622D;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
-
-/* FOOTER */
 footer{background:#111;color:#aaa;text-align:center;padding:24px 20px;font-size:13px;}
 footer a{color:#C4622D;}
 </style>
@@ -92,7 +73,7 @@ footer a{color:#C4622D;}
 
 <header>
   <nav class="nav">
-    <div class="nav-logo"><img src="https://drive.google.com/uc?export=view&id=1sRiLsBjWzDmqJoDI3U_ONB4668D2pVUK" alt="Civic Rendering & Painting"/></div>
+    <div class="nav-logo"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936080/civic/logo.png" alt="Civic Rendering & Painting"/></div>
     <div class="nav-links">
       <a href="#services">Services</a>
       <a href="#gallery">Our Work</a>
@@ -127,18 +108,18 @@ footer a{color:#C4622D;}
 <section id="trusted" style="background:#f9f9f9;">
   <div class="section-title"><h2>Trusted by Sydney's Leading Builders</h2><div class="bar"></div></div>
   <div class="logos-grid">
-    <div class="logo-item dark"><img src="https://drive.google.com/uc?export=view&id=1jUmiCREL7gHokusdQidDM9GBKY2ihhj7" alt="Taylor"/></div>
-    <div class="logo-item dark"><img src="https://drive.google.com/uc?export=view&id=11xfVtldKN65DOQdbHw67TVxarDYbND8F" alt="Kane"/></div>
-    <div class="logo-item"><img src="https://drive.google.com/uc?export=view&id=1yOzTHCj977dB7C4e3QvgKg7jhc8NkpU-" alt="NSync"/></div>
-    <div class="logo-item"><img src="https://drive.google.com/uc?export=view&id=1zV0SdsohEgbGGJwM2OQRxtb_N1itSgSM" alt="McCann"/></div>
-    <div class="logo-item"><img src="https://drive.google.com/uc?export=view&id=1ZhzySuaPj2PBc50gK3y_2HB7NXB8cK43" alt="IGS"/></div>
-    <div class="logo-item"><img src="https://drive.google.com/uc?export=view&id=1kdMSBnhxp4CAlCrQbj9aCEmjvdr56gDm" alt="Central Projects"/></div>
-    <div class="logo-item"><img src="https://drive.google.com/uc?export=view&id=1j639CFXfZtuRwH4FaTeUzB9lAAx3jwA1" alt="Dunn & Pilcher"/></div>
-    <div class="logo-item dark"><img src="https://drive.google.com/uc?export=view&id=1Cta6ABlmbybmZljjrcZm9JQLWpovWJGv" alt="Lipman"/></div>
-    <div class="logo-item"><img src="https://drive.google.com/uc?export=view&id=1owxIupM_Gx7rwWozjTiI-lKkAcShXpsy" alt="Grindley"/></div>
-    <div class="logo-item dark"><img src="https://drive.google.com/uc?export=view&id=13nnnTagd-MDijSJz-IMt5xmDLInckeFy" alt="Richard Crookes"/></div>
-    <div class="logo-item"><img src="https://drive.google.com/uc?export=view&id=198B2a7DMrna_0F4zlPSgQJ6s4bsQ6ZwP" alt="Boden"/></div>
-    <div class="logo-item"><img src="https://drive.google.com/uc?export=view&id=1biDE9MH3ZWEd16jywk7Ff96aqmEUy1JM" alt="Buildcorp"/></div>
+    <div class="logo-item dark"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936100/civic/logo-taylor.svg" alt="Taylor"/></div>
+    <div class="logo-item dark"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936102/civic/logo-kane.jpg" alt="Kane Constructions"/></div>
+    <div class="logo-item"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936103/civic/logo-nsync.png" alt="NSync"/></div>
+    <div class="logo-item"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936105/civic/logo-mccann.png" alt="McCann"/></div>
+    <div class="logo-item"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936106/civic/logo-igs.jpg" alt="IGS"/></div>
+    <div class="logo-item"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936108/civic/logo-central-projects.png" alt="Central Projects"/></div>
+    <div class="logo-item"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936110/civic/logo-dunn-pilcher.png" alt="Dunn & Pilcher"/></div>
+    <div class="logo-item dark"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936111/civic/logo-lipman.svg" alt="Lipman"/></div>
+    <div class="logo-item"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936113/civic/logo-grindley.jpg" alt="Grindley"/></div>
+    <div class="logo-item dark"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936115/civic/logo-richard-crookes.png" alt="Richard Crookes"/></div>
+    <div class="logo-item"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936116/civic/logo-boden.png" alt="Boden"/></div>
+    <div class="logo-item"><img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936118/civic/logo-buildcorp.png" alt="Buildcorp"/></div>
   </div>
 </section>
 
@@ -146,22 +127,22 @@ footer a{color:#C4622D;}
   <div class="section-title"><h2>Our Work</h2><div class="bar"></div></div>
   <div class="gallery-group"><h3>Mittagong House</h3>
     <div class="gallery-grid">
-      <img src="https://drive.google.com/uc?export=view&id=1z6RK8cN3aunxHXFyjuM52BEI_TvOyJFk" alt="Mittagong House" loading="lazy"/>
-      <img src="https://drive.google.com/uc?export=view&id=1DCOWrlNpL4SdqztHs5iGsNJgEcdn8FGs" alt="Mittagong House" loading="lazy"/>
-      <img src="https://drive.google.com/uc?export=view&id=189q3VSLgER4gM4SptYoCOlXBZo8-seVr" alt="Mittagong House" loading="lazy"/>
+      <img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936082/civic/mittagong-1.jpg" alt="Mittagong House" loading="lazy"/>
+      <img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936085/civic/mittagong-2.jpg" alt="Mittagong House" loading="lazy"/>
+      <img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936087/civic/mittagong-3.jpg" alt="Mittagong House" loading="lazy"/>
     </div>
   </div>
   <div class="gallery-group"><h3>Mountainside House</h3>
     <div class="gallery-grid">
-      <img src="https://drive.google.com/uc?export=view&id=1R7uON7F0SyGvZKGvzFwW6DcGKPOMp03c" alt="Mountainside House" loading="lazy"/>
-      <img src="https://drive.google.com/uc?export=view&id=154HUXiEZpaXEa4fZDLkAhCPxdwSM9eYF" alt="Mountainside House" loading="lazy"/>
-      <img src="https://drive.google.com/uc?export=view&id=1dqpkFTcJfM0Wv8ffr3W4v14N5syBhifv" alt="Mountainside House" loading="lazy"/>
+      <img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936089/civic/mountainside-1.jpg" alt="Mountainside House" loading="lazy"/>
+      <img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936092/civic/mountainside-2.jpg" alt="Mountainside House" loading="lazy"/>
+      <img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936094/civic/mountainside-3.jpg" alt="Mountainside House" loading="lazy"/>
     </div>
   </div>
   <div class="gallery-group"><h3>The Grove</h3>
     <div class="gallery-grid">
-      <img src="https://drive.google.com/uc?export=view&id=1Cc2FHhjouZCiW4tyqT1TJ4Fiym-MTbb1" alt="The Grove" loading="lazy"/>
-      <img src="https://drive.google.com/uc?export=view&id=1VlISrHK6OEkBqeRxx1Yt2LhNeEnd9Paz" alt="The Grove" loading="lazy"/>
+      <img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936096/civic/grove-1.jpg" alt="The Grove" loading="lazy"/>
+      <img src="https://res.cloudinary.com/dlq8zwkbq/image/upload/v1776936099/civic/grove-2.jpg" alt="The Grove" loading="lazy"/>
     </div>
   </div>
 </section>
@@ -181,8 +162,7 @@ footer a{color:#C4622D;}
 <section id="contact">
   <div class="section-title"><h2>Get a Free Quote</h2><div class="bar"></div></div>
   <div class="contact-grid">
-    <form class="contact-form" name="contact" data-netlify="true" method="POST">
-      <input type="hidden" name="form-name" value="contact"/>
+    <form class="contact-form" action="https://formspree.io/f/civicrendering" method="POST">
       <input type="text" name="name" placeholder="Your Name" required/>
       <input type="tel" name="phone" placeholder="Phone Number"/>
       <input type="email" name="email" placeholder="Email Address" required/>
