@@ -162,20 +162,32 @@ footer a{color:#C4622D;}
 <section id="contact">
   <div class="section-title"><h2>Get a Free Quote</h2><div class="bar"></div></div>
   <div class="contact-grid">
-    <form class="contact-form" action="https://formspree.io/f/maqalrow" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required/>
-      <input type="tel" name="phone" placeholder="Phone Number"/>
-      <input type="email" name="email" placeholder="Email Address" required/>
-      <select name="project-type">
+    <form class="contact-form" onsubmit="sendMail(event)">
+      <input type="text" id="cf-name" placeholder="Your Name" required/>
+      <input type="tel" id="cf-phone" placeholder="Phone Number"/>
+      <input type="email" id="cf-email" placeholder="Email Address" required/>
+      <select id="cf-type">
         <option value="" disabled selected>Project Type</option>
         <option>Rendering</option>
         <option>Painting</option>
         <option>Both</option>
         <option>Not Sure</option>
       </select>
-      <textarea name="message" placeholder="Tell us about your project..."></textarea>
+      <textarea id="cf-message" placeholder="Tell us about your project..."></textarea>
       <button type="submit" class="btn" style="width:100%;padding:14px;">Send Enquiry</button>
     </form>
+    <script>
+    function sendMail(e) {
+      e.preventDefault();
+      var name = document.getElementById('cf-name').value;
+      var phone = document.getElementById('cf-phone').value;
+      var email = document.getElementById('cf-email').value;
+      var type = document.getElementById('cf-type').value;
+      var msg = document.getElementById('cf-message').value;
+      var body = 'Name: ' + name + '%0APhone: ' + phone + '%0AEmail: ' + email + '%0AProject Type: ' + type + '%0A%0AMessage:%0A' + msg;
+      window.location.href = 'mailto:civicrendering@gmail.com?subject=Quote Request - Civic Rendering&body=' + body;
+    }
+    </script>
     <div class="contact-details">
       <h3>Contact Us</h3>
       <div class="contact-item"><div class="icon">📞</div><div><a href="tel:0414915220">0414 915 220</a></div></div>
